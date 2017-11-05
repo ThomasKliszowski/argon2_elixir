@@ -188,8 +188,8 @@ static int upgrade(ErlNifEnv* env, void** priv_data, void** old_priv_data, ERL_N
 
 static ErlNifFunc argon2_nif_funcs[] =
 {
-	{"hash_nif", 10, argon2_hash_nif, ERL_NIF_DIRTY_JOB_CPU_BOUND},
-	{"verify_nif", 3, argon2_verify_nif, ERL_NIF_DIRTY_JOB_CPU_BOUND},
+	{"hash_nif", 10, argon2_hash_nif},
+	{"verify_nif", 3, argon2_verify_nif},
 	{"error_nif", 1, argon2_error_nif},
 	{"encodedlen_nif", 6, argon2_encodedlen_nif}
 };
